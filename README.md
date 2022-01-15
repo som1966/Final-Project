@@ -7,7 +7,7 @@ The team was very interested in the World Happiness Index and wanted to see if t
 ## Data
 Twelve data sources were selected and reviewed for potential variables that may impact / predict the "Life Ladder Score".
 
-**Life Ladder Score is a "Nationally representative samples of respondents are asked to think of a ladder, with the best possible life for them being a 10, and the worst possible life being a 0. They are then asked to rate their own current lives on that 0 to 10 scale. (https://medium.com/analytics-vidhya/what-is-world-happiness-index-f5744490701f)
+**Life Ladder Score is a "Nationally representative samples of respondents are asked to think of a ladder, with the best possible life for them being a 10, and the worst possible life being a 0. They are then asked to rate their own current lives on that 0 to 10 scale." (https://medium.com/analytics-vidhya/what-is-world-happiness-index-f5744490701f)
 
 ![image](https://user-images.githubusercontent.com/89953246/149640645-63e7ba70-ac98-4210-bf56-7354dd55659d.png)
 
