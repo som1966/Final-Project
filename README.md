@@ -11,18 +11,13 @@ Twelve data sources were selected and reviewed for potential variables that may 
 
 ![image](https://user-images.githubusercontent.com/89953246/149640645-63e7ba70-ac98-4210-bf56-7354dd55659d.png)
 
-Data variables selected and joined in SQL.
-
-![image](https://user-images.githubusercontent.com/89953246/149640924-e7f0e644-ae37-41fa-951c-12d35a3c0c1a.png)
-
 Proposed Model:
 y (life_ladder) = X (democracy_index, consumer_price_index, gender_ratio_males_per100_female, infant_mortality, life_expectancy, per_capita_gdp_dollars, population_density, safe_drinking_water_access, seats_held_by_women_pct, unemployment_rate)
 
+## Proposed Analysis 
+
+SQL is used to create,join tables and for the ERD.
 
 
-## Proposed Analysis
-
-Principal component analysis (PCA) will be used to emphasize variation and bring out strong patterns in a dataset. 
 
 
-![image](https://user-images.githubusercontent.com/89953246/149640789-d3e3de5c-4e59-4c97-8ba8-668a0e93f4b5.png)
