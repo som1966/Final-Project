@@ -12,12 +12,15 @@ Twelve data sources were selected and reviewed for potential variables that may 
 ![image](https://user-images.githubusercontent.com/89953246/149640645-63e7ba70-ac98-4210-bf56-7354dd55659d.png)
 
 Proposed Model:
+
 y (life_ladder) = X (democracy_index, consumer_price_index, gender_ratio_males_per100_female, infant_mortality, life_expectancy, per_capita_gdp_dollars, population_density, safe_drinking_water_access, seats_held_by_women_pct, unemployment_rate)
 
 ## Proposed Analysis 
 
-SQL is used to create,join tables and for the ERD.
+SQL is used to create,join tables, the draft ERD and connect to database from AWS/S3.
 
+![image](https://user-images.githubusercontent.com/89953246/149641402-8564d9af-a486-4fda-bb05-db9bef9f414e.png)
 
+Python / Pandas will be used to ETL the dataset. A supervised learning model approach will be used, utilizing PCA analysis and Random Forest algorithms for the analyses. A dashboard will be displayed using Tableau.
 
 
