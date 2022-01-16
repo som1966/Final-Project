@@ -4,6 +4,11 @@
 The team was very interested in the World Happiness Index and wanted to see if there were other factors that will improve / predict the "Life Ladder Score".
 (The World Happiness Annual Report was started back in 2012 when the United Nations adopted a resolution: "Happiness: Towards a Holistic Definition of Development" to encourage countries to measure happiness and guide public policy.  The Happiness Index originates from the nation of Bhutan who uses measures gross national happiness instead of gross domestic product- Wikipedia)
 
+### Potential Questions
+1) If any variable will change the happiness score (Ladder Score)?
+2) Is happiness related to increase in a nation's wealth?
+3) Can a positive indicator be improved by public policy change?
+
 ## Data
 Twelve data sources were selected and reviewed for potential variables that may impact / predict the "Life Ladder Score".
 
