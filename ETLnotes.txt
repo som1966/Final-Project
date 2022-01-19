@@ -1,0 +1,25 @@
+final project notes on ETL of the provided Dataset:
+
+my task: clean , transform and merge the tables 1 -7; and put (table 3) as an index
+
+My procedure: 
+1) deleted the columns “series”, “footnotes” and “source” from the Dataframes 4 to 7 
+
+3) renamed [“Value”] for each respective tables according to its original table. 
+
+4) then combined tables 4 to 7 
+
+5) noticed the null or NaN values for the clustered table4to7
+
+6) cleaned that null-values-rows from the clustered table
+
+7) dropped duplicate columns from the clusteredtables4to7_df
+
+8) ordered the columns of the clustered table
+
+9) checked any unique values, especially for column "year"
+please note: per capita GDP's and pop density's year is not matching. one is 2019 and the other one is 2020!!!
+
+
+
+------ exported the cleaned clustered table to the folder. -------------
