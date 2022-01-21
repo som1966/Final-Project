@@ -75,6 +75,7 @@ The interactive section of the dashboard will be (hopefully) "clicking" on the c
 Just started creating this week.
 https://docs.google.com/presentation/d/1zdmZOS9oP672zvAwrpg43FSCLmBkMgHUuzWG4IWJRE8/edit#slide=id.g10c59dc17de_0_268
 
+![image](https://user-images.githubusercontent.com/89953246/150591282-907430bd-e9c9-4b1c-9d66-08c85413f966.png)
 
 
 
