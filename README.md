@@ -26,6 +26,8 @@ The data was ETL - loaded, transformed (removing null values, unnecessary column
 
 ![ETL](https://user-images.githubusercontent.com/89953246/150582559-3ff9a15a-2f0f-47fa-8502-4f360310cb9d.png)
 
+
+
 ## Exploring Models
 
 First, Multiple Linear Regression was used to to predict outcome (Life Ladder)
@@ -45,13 +47,19 @@ The team also discussed adding additional data or change the model.  A new model
 y (life_expectancy) = X (democracy_index, consumer_price_index, gender_ratio_males_per100_female, infant_mortality, life_ladder, per_capita_gdp_dollars, population_density, safe_drinking_water_access, seats_held_by_women_pct, unemployment_rate)
 
 
+## Dashboard
+The dashboard is being created in Tableau.  The following tables have been created:
+
+![Dashboard draft](https://user-images.githubusercontent.com/89953246/150587681-367a84c3-38d5-4aa5-8f7a-40869b4dcdc6.png)
+
+![image](https://user-images.githubusercontent.com/89953246/150587891-1ec5e020-62ab-480c-a9eb-571b282bf6ff.png)
+
+The interactive section of the dashboard will be (hopefully) "clicking" on the country and "sheet 2" will change to reflect the country.  Still working on "normalizing gdp" and the interaction.
+
+![image](https://user-images.githubusercontent.com/89953246/150588521-b00d8220-edb6-4b17-8996-f9664ba45904.png)
 
 
 
-## Proposed Analysis 
 
-
-
-Python / Pandas will be used to ETL the dataset. A supervised learning model approach will be used, utilizing PCA analysis and Random Forest algorithms for the analyses. A dashboard will be displayed using Tableau.
 
 
