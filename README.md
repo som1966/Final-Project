@@ -32,6 +32,8 @@ The data was ETL - loaded, transformed (removing null values, unnecessary column
 
 ## Exploring Models
 
+In considering models for the dataset and questions to be answered, Multiple Linear Regression was the better choice because the data was not broken down by classification.
+
 First, Multiple Linear Regression was used to to predict outcome (Life Ladder)
 
 y (life_ladder) = X (democracy_index, consumer_price_index, gender_ratio_males_per100_female, infant_mortality, life_expectancy, per_capita_gdp_dollars, population_density, safe_drinking_water_access, seats_held_by_women_pct, unemployment_rate)
@@ -44,7 +46,7 @@ To enhance the multiple regression, RandomForest Regressor was used. Random Fore
 
 (add image of results)
 
-The team also discussed adding additional data or change the model.  A new model was developed for the RandomForestRegressorby switching the (y) to life_expectancy and adding life_ladder to (x).
+The team also discussed adding additional data or change the model.  A new model was developed for the RandomForestRegressor by switching the (y) to life_expectancy and adding life_ladder to (x).
 
 y (life_expectancy) = X (democracy_index, consumer_price_index, gender_ratio_males_per100_female, infant_mortality, life_ladder, per_capita_gdp_dollars, population_density, safe_drinking_water_access, seats_held_by_women_pct, unemployment_rate)
 
@@ -55,6 +57,8 @@ y (life_expectancy) = X (democracy_index, consumer_price_index, gender_ratio_mal
 ![image](https://user-images.githubusercontent.com/89953246/150590297-b7ef3b57-447f-401a-8a34-095d171f3d9c.png)
 
 ![image](https://user-images.githubusercontent.com/89953246/150590411-033027e2-9a2d-4746-8a9d-2f41d908a873.png)
+
+This model performs better with the datasets selected.
 
 ## Dashboard
 The dashboard is being created in Tableau (https://public.tableau.com/app/profile/nancy.condon#!/).  The purpose of the dashboard is to let the user see components of the raw data that made up the final model for better understanding.  The following tables have been created:
