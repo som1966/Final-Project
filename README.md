@@ -4,7 +4,7 @@
 The team was very interested in the World Happiness Index and wanted to see if there were other factors that will improve / predict the "Life Ladder Score".
 (The World Happiness Annual Report was started back in 2012 when the United Nations adopted a resolution: "Happiness: Towards a Holistic Definition of Development" to encourage countries to measure happiness and guide public policy.  The Happiness Index originates from the nation of Bhutan who uses measures gross national happiness instead of gross domestic product- Wikipedia)
 
-### Potential Questions
+## Potential Questions
 
 1) Will any of the selected variables(democracy_index, consumer_price_index, gender_ratio_males_per100_female, infant_mortality, life_expectancy, per_capita_gdp_dollars, population_density, safe_drinking_water_access, seats_held_by_women_pct, unemployment_rate) affect the happiness score (Ladder Score)?
 2) Is happiness related to increase in a nation's wealth?
@@ -26,7 +26,9 @@ The data was ETL - loaded, transformed (removing null values, unnecessary column
 
 ![ETL](https://user-images.githubusercontent.com/89953246/150582559-3ff9a15a-2f0f-47fa-8502-4f360310cb9d.png)
 
+### Tool Box
 
+![image](https://user-images.githubusercontent.com/89953246/150589223-dd3436f9-1f6a-4249-aa58-b1d8d348e7f1.png)
 
 ## Exploring Models
 
@@ -46,9 +48,12 @@ The team also discussed adding additional data or change the model.  A new model
 
 y (life_expectancy) = X (democracy_index, consumer_price_index, gender_ratio_males_per100_female, infant_mortality, life_ladder, per_capita_gdp_dollars, population_density, safe_drinking_water_access, seats_held_by_women_pct, unemployment_rate)
 
+![image](https://user-images.githubusercontent.com/89953246/150589660-a2df6d51-7b3f-4986-8393-a65fad3a2c6d.png)
+
+![image](https://user-images.githubusercontent.com/89953246/150589768-a20f7877-3e82-4b4d-97b7-d80a8ada98be.png)
 
 ## Dashboard
-The dashboard is being created in Tableau.  The following tables have been created:
+The dashboard is being created in Tableau (https://public.tableau.com/app/profile/nancy.condon#!/).  The purpose of the dashboard is to let the user see components of the raw data that made up the final model for better understanding.  The following tables have been created:
 
 ![Dashboard draft](https://user-images.githubusercontent.com/89953246/150587681-367a84c3-38d5-4aa5-8f7a-40869b4dcdc6.png)
 
@@ -56,9 +61,11 @@ The dashboard is being created in Tableau.  The following tables have been creat
 
 The interactive section of the dashboard will be (hopefully) "clicking" on the country and "sheet 2" will change to reflect the country.  Still working on "normalizing gdp" and the interaction.
 
-![image](https://user-images.githubusercontent.com/89953246/150588521-b00d8220-edb6-4b17-8996-f9664ba45904.png)
 
+## Google Slides
 
+Just started creating this week.
+https://docs.google.com/presentation/d/1zdmZOS9oP672zvAwrpg43FSCLmBkMgHUuzWG4IWJRE8/edit#slide=id.g10c59dc17de_0_268
 
 
 
