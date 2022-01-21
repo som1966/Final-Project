@@ -18,6 +18,10 @@ Twelve data sources were selected and reviewed for potential variables that may 
 
 ![image](https://user-images.githubusercontent.com/89953246/149640645-63e7ba70-ac98-4210-bf56-7354dd55659d.png)
 
+SQL is used to create,join tables, the draft ERD and connect to database from AWS/S3.
+
+![image](https://user-images.githubusercontent.com/89953246/149641402-8564d9af-a486-4fda-bb05-db9bef9f414e.png)
+
 The data was ETL - loaded, transformed (removing null values, unnecessary columns, joined with other tables and created dataframes.
 
 ![ETL](https://user-images.githubusercontent.com/89953246/150582559-3ff9a15a-2f0f-47fa-8502-4f360310cb9d.png)
@@ -46,9 +50,7 @@ y (life_expectancy) = X (democracy_index, consumer_price_index, gender_ratio_mal
 
 ## Proposed Analysis 
 
-SQL is used to create,join tables, the draft ERD and connect to database from AWS/S3.
 
-![image](https://user-images.githubusercontent.com/89953246/149641402-8564d9af-a486-4fda-bb05-db9bef9f414e.png)
 
 Python / Pandas will be used to ETL the dataset. A supervised learning model approach will be used, utilizing PCA analysis and Random Forest algorithms for the analyses. A dashboard will be displayed using Tableau.
 
