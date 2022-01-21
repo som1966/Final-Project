@@ -48,9 +48,13 @@ The team also discussed adding additional data or change the model.  A new model
 
 y (life_expectancy) = X (democracy_index, consumer_price_index, gender_ratio_males_per100_female, infant_mortality, life_ladder, per_capita_gdp_dollars, population_density, safe_drinking_water_access, seats_held_by_women_pct, unemployment_rate)
 
-![image](https://user-images.githubusercontent.com/89953246/150589660-a2df6d51-7b3f-4986-8393-a65fad3a2c6d.png)
+![image](https://user-images.githubusercontent.com/89953246/150590506-b7dfb4a4-6aa3-4a3f-a31b-70192afbccb4.png)
 
-![image](https://user-images.githubusercontent.com/89953246/150589768-a20f7877-3e82-4b4d-97b7-d80a8ada98be.png)
+![image](https://user-images.githubusercontent.com/89953246/150590034-f9122fec-9482-4b14-b774-58add097c4e7.png)
+
+![image](https://user-images.githubusercontent.com/89953246/150590297-b7ef3b57-447f-401a-8a34-095d171f3d9c.png)
+
+![image](https://user-images.githubusercontent.com/89953246/150590411-033027e2-9a2d-4746-8a9d-2f41d908a873.png)
 
 ## Dashboard
 The dashboard is being created in Tableau (https://public.tableau.com/app/profile/nancy.condon#!/).  The purpose of the dashboard is to let the user see components of the raw data that made up the final model for better understanding.  The following tables have been created:
