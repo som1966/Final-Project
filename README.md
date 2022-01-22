@@ -34,6 +34,8 @@ The data was ETL - loaded, transformed (removing null values, unnecessary column
 
 In considering models for the dataset and questions to be answered, Multiple Linear Regression was the better choice because the data was not broken down by classification.
 
+### Model 1
+
 First, Multiple Linear Regression was used to to predict outcome (Life Ladder)
 
 y (life_ladder) = X (democracy_index, consumer_price_index, gender_ratio_males_per100_female, infant_mortality, life_expectancy, per_capita_gdp_dollars, population_density, safe_drinking_water_access, seats_held_by_women_pct, unemployment_rate)
@@ -44,7 +46,15 @@ This model's R2 came to 0.31, indicating there was little correlation between th
 
 ![image](https://user-images.githubusercontent.com/89953246/150646398-f9fa4bb1-251c-456f-8a60-7b72380b875f.png)
 
+![image](https://user-images.githubusercontent.com/89953246/150646554-29d086e9-2a5b-46b0-a3c1-e67bc7acc2a5.png)
 
+### Model 2
+
+Multiple Linear Regression was used to predict outcome again (3 features dropped)
+
+
+
+### Model 3
 
 To enhance the multiple regression, RandomForest Regressor was used. Random Forest Regressor is a supervised learning algorithm which uses ensemble learning using multiple regression decision trees and then calculates the average of the multiple decision trees.
 
