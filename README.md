@@ -38,7 +38,13 @@ First, Multiple Linear Regression was used to to predict outcome (Life Ladder)
 
 y (life_ladder) = X (democracy_index, consumer_price_index, gender_ratio_males_per100_female, infant_mortality, life_expectancy, per_capita_gdp_dollars, population_density, safe_drinking_water_access, seats_held_by_women_pct, unemployment_rate)
 
-This model's R2 came to 0.30, indicating there was little correlation between the predicted and observed values.  Three of the lowest features were dropped and the model was rerun with no significant change. (add image of code)
+![image](https://user-images.githubusercontent.com/89953246/150646356-bd64f527-792a-4c0f-92ea-1c6e36fda88d.png)
+
+This model's R2 came to 0.31, indicating there was little correlation between the predicted and observed values.  Three of the lowest features were dropped and the model was rerun with no significant change. 
+
+![image](https://user-images.githubusercontent.com/89953246/150646398-f9fa4bb1-251c-456f-8a60-7b72380b875f.png)
+
+
 
 To enhance the multiple regression, RandomForest Regressor was used. Random Forest Regressor is a supervised learning algorithm which uses ensemble learning using multiple regression decision trees and then calculates the average of the multiple decision trees.
 
