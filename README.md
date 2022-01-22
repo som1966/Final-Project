@@ -56,13 +56,13 @@ The accuracy dropped to 0.23.
 
 ### Model 2 Random Forest Regressor
 
-
-
-### Model 3 Random Forest Regressor And New (Y)
-
 To enhance the multiple regression, RandomForest Regressor was used. Random Forest Regressor is a supervised learning algorithm which uses ensemble learning using multiple regression decision trees and then calculates the average of the multiple decision trees.
 
 ![Random Forest Image](https://user-images.githubusercontent.com/89953246/150585434-feeab381-7675-4c84-8681-242f9f0b358d.jpeg)
+
+### Model 3 Random Forest Regressor And New (Y)
+
+
 
 (add image of results)
 
