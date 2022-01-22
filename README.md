@@ -48,9 +48,15 @@ This model's R2 came to 0.31, indicating there was little correlation between th
 
 ![image](https://user-images.githubusercontent.com/89953246/150646554-29d086e9-2a5b-46b0-a3c1-e67bc7acc2a5.png)
 
-Multiple Linear Regression was used to predict outcome again (3 features dropped)
+## Multiple Linear Regression was used to predict outcome again (3 features dropped)
+The following features were dropped- unemployment_rate, population_density, and consumer_price_index.
+The accuracy dropped to 0.23.
+
+![image](https://user-images.githubusercontent.com/89953246/150650140-84269bc0-2a72-4e5d-b143-3ef07782ddc9.png)
 
 ### Model 2 Random Forest Regressor
+
+
 
 ### Model 3 Random Forest Regressor And New (Y)
 
