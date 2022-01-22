@@ -48,13 +48,11 @@ This model's R2 came to 0.31, indicating there was little correlation between th
 
 ![image](https://user-images.githubusercontent.com/89953246/150646554-29d086e9-2a5b-46b0-a3c1-e67bc7acc2a5.png)
 
-### Model 2
-
 Multiple Linear Regression was used to predict outcome again (3 features dropped)
 
+### Model 2 Random Forest Regressor
 
-
-### Model 3
+### Model 3 Random Forest Regressor And New (Y)
 
 To enhance the multiple regression, RandomForest Regressor was used. Random Forest Regressor is a supervised learning algorithm which uses ensemble learning using multiple regression decision trees and then calculates the average of the multiple decision trees.
 
