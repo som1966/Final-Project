@@ -60,11 +60,13 @@ To enhance the multiple regression, RandomForest Regressor was used. Random Fore
 
 ![Random Forest Image](https://user-images.githubusercontent.com/89953246/150585434-feeab381-7675-4c84-8681-242f9f0b358d.jpeg)
 
+The original model (see below) was rerun using Random Forest Regressor.
+
+y (life_ladder) = X (democracy_index, consumer_price_index, gender_ratio_males_per100_female, infant_mortality, life_expectancy, per_capita_gdp_dollars, population_density, safe_drinking_water_access, seats_held_by_women_pct, unemployment_rate)
+
+
+
 ### Model 3 Random Forest Regressor And New (Y)
-
-
-
-(add image of results)
 
 The team also discussed adding additional data or change the model.  A new model was developed for the RandomForestRegressor by switching the (y) to life_expectancy and adding life_ladder to (x).
 
