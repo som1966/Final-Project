@@ -64,7 +64,13 @@ The original model (see below) was rerun using Random Forest Regressor.
 
 y (life_ladder) = X (democracy_index, consumer_price_index, gender_ratio_males_per100_female, infant_mortality, life_expectancy, per_capita_gdp_dollars, population_density, safe_drinking_water_access, seats_held_by_women_pct, unemployment_rate)
 
+![image](https://user-images.githubusercontent.com/89953246/150684948-81695bd6-5a19-427e-a0d4-2f4c44566928.png)
 
+![image](https://user-images.githubusercontent.com/89953246/150684981-a0bf049f-77ba-44a5-a199-eb4824f9dc6c.png)
+
+![image](https://user-images.githubusercontent.com/89953246/150685010-bf6998c3-0cda-4074-a820-3df8511fe68b.png)
+
+Using the Random Forest Regressor, improved the R2 = 0.36; still not reflecting a good fit.  
 
 ### Model 3 Random Forest Regressor And New (Y)
 
