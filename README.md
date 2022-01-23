@@ -86,7 +86,7 @@ y (life_expectancy) = X (democracy_index, consumer_price_index, gender_ratio_mal
 
 ![image](https://user-images.githubusercontent.com/89953246/150590411-033027e2-9a2d-4746-8a9d-2f41d908a873.png)
 
-This model performs better with the datasets selected.
+
 
 ## Dashboard
 The dashboard is being created in Tableau (https://public.tableau.com/app/profile/nancy.condon#!/).  The purpose of the dashboard is to let the user see components of the raw data that made up the final model for better understanding.  The following tables have been created:
