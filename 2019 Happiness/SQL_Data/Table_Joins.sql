@@ -1,11 +1,11 @@
 --
 -- Query to Join all Tables
 --
-SELECT  c.country_code, 
-		c.country_name, 
-		hs.life_ladder, 
-		di.democracy_index, 
-		cpi.consumer_price_index, 
+SELECT  c.country_code,
+		c.country_name,
+		hs.life_ladder,
+		di.democracy_index,
+		cpi.consumer_price_index,
 		gr.gender_ratio_males_per100_female,
 		im.infant_mortality_per1000_births,
 		le. life_expectancy,
@@ -43,11 +43,11 @@ ON c.country_code = ur.country_code
 -- Create New Singular/Combined Table
 --
 CREATE TABLE happiness_joined AS
-SELECT  c.country_code, 
-		c.country_name, 
-		hs.life_ladder, 
-		di.democracy_index, 
-		cpi.consumer_price_index, 
+SELECT  c.country_code,
+		c.country_name,
+		hs.life_ladder,
+		di.democracy_index,
+		cpi.consumer_price_index,
 		gr.gender_ratio_males_per100_female,
 		im.infant_mortality_per1000_births,
 		le. life_expectancy,
@@ -81,7 +81,9 @@ JOIN unemployment_rate ur
 ON c.country_code = ur.country_code
 ;
 
+-- Use pgAdmin Export functionality to export table to CSV
+
 --
--- Write table to CSV
+-- Write table to CSV (Only works for local DB instances.)
 --
-COPY happiness_joined TO 'C:\Users\Public\happiness_joined.csv' DELIMITER ',' CSV HEADER;
+-- COPY happiness_joined TO 'C:\Users\Public\happiness_joined.csv' DELIMITER ',' CSV HEADER;

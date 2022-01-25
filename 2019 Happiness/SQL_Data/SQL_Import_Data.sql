@@ -1,3 +1,5 @@
+-- Code to Load Data into SQL DB Schema from Local Files
+-- Used to check schema
 COPY country
 FROM 'C:\Users\Public\country.csv'
 DELIMITER ',' CSV HEADER
