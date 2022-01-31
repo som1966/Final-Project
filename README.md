@@ -91,19 +91,13 @@ y (life_expectancy) = X (democracy_index, consumer_price_index, gender_ratio_mal
 ## Dashboard
 The dashboard is being created in Tableau (https://public.tableau.com/app/profile/nancy.condon#!/).  The purpose of the dashboard is to let the user see components of the raw data that made up the final model for better understanding.  The following tables have been created:
 
-![Dashboard draft](https://user-images.githubusercontent.com/89953246/150587681-367a84c3-38d5-4aa5-8f7a-40869b4dcdc6.png)
+![image](https://user-images.githubusercontent.com/89953246/151725355-6da69b96-2c97-4043-b275-de0052bf3a68.png)
 
-![image](https://user-images.githubusercontent.com/89953246/150587891-1ec5e020-62ab-480c-a9eb-571b282bf6ff.png)
-
-The interactive section of the dashboard will be (hopefully) "clicking" on the country and "sheet 2" will change to reflect the country.  Still working on "normalizing gdp" and the interaction.
 
 
 ## Google Slides
 
-Just started creating this week.
-https://docs.google.com/presentation/d/1zdmZOS9oP672zvAwrpg43FSCLmBkMgHUuzWG4IWJRE8/edit#slide=id.g10c59dc17de_0_268
 
-![image](https://user-images.githubusercontent.com/89953246/150591282-907430bd-e9c9-4b1c-9d66-08c85413f966.png)
 
 
 
