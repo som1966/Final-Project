@@ -4,7 +4,10 @@
 The team was very interested in the World Happiness Index and wanted to see if there were other factors that will improve / predict the "Life Ladder Score".
 (The World Happiness Annual Report was started back in 2012 when the United Nations adopted a resolution: "Happiness: Towards a Holistic Definition of Development" to encourage countries to measure happiness and guide public policy.  The Happiness Index originates from the nation of Bhutan who uses measures gross national happiness instead of gross domestic product- Wikipedia)
 
-## Potential Questions
+## Purpose of Analyss / Potential Questions
+
+![image](https://user-images.githubusercontent.com/89953246/151729987-95ae97e6-dc31-4f6a-a53b-1697a6d63f16.png)
+
 
 1) Will any of the selected variables(democracy_index, consumer_price_index, gender_ratio_males_per100_female, infant_mortality, life_expectancy, per_capita_gdp_dollars, population_density, safe_drinking_water_access, seats_held_by_women_pct, unemployment_rate) affect the happiness score (Ladder Score)?
 2) Is happiness related to increase in a nation's wealth?
@@ -22,6 +25,10 @@ SQL is used to create,join tables, the draft ERD and connect to database from AW
 
 ![image](https://user-images.githubusercontent.com/89953246/149641402-8564d9af-a486-4fda-bb05-db9bef9f414e.png)
 
+Data Descriptions:
+
+![image](https://user-images.githubusercontent.com/89953246/151730062-d48f97f0-8414-4239-bfca-f8490e694423.png)
+
 The data was ETL - loaded, transformed (removing null values, unnecessary columns, joined with other tables and created dataframes.
 
 ![ETL](https://user-images.githubusercontent.com/89953246/150582559-3ff9a15a-2f0f-47fa-8502-4f360310cb9d.png)
@@ -29,6 +36,8 @@ The data was ETL - loaded, transformed (removing null values, unnecessary column
 ### Tool Box
 
 ![image](https://user-images.githubusercontent.com/89953246/150589223-dd3436f9-1f6a-4249-aa58-b1d8d348e7f1.png)
+
+
 
 ## Exploring Models
 
