@@ -55,13 +55,11 @@ root mean squared error:  0.4689012451019692
 
 ![alt text](https://github.com/Zohairk4help/gwu_groupProject_happiness/blob/main/present_2ndseg/R2ScoreForallvariable.PNG?raw=true)
 
-ref: https://github.com/Zohairk4help/gwu_groupProject_happiness/blob/main/present_2ndseg/R2ScoreForallvariable.PNG
 
   As this model's R2 came to be 0.636 with different p_values, indicating there was little correlation between the predicted and observed values.  It was decided to drop the highest p_values for X-variables up until the point the model has its least RMSE score and the reasonable R2 scores.
 
 ![alt text](https://github.com/Zohairk4help/gwu_groupProject_happiness/blob/main/present_2ndseg/DFshowingrerunningML_dropingx-variables.PNG?raw=true)
 
-https://github.com/Zohairk4help/gwu_groupProject_happiness/blob/main/present_2ndseg/DFshowingrerunningML_dropingx-variables.PNG
 
 ## DF showing the results after rerunning of the Multiple Linear Regression after one-by-one features dropping: 
 The following features were dropped: "country_name", "country_code", "life_expectancy" & "consumer_price_index"
