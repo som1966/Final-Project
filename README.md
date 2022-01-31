@@ -1,4 +1,4 @@
-# Final Project :  (Title Under Development)
+# Final Project :  What Determines Happiness?
 
 ## Topic
 The team was very interested in the World Happiness Index and wanted to see if there were other factors that will improve / predict the "Life Ladder Score".
@@ -89,14 +89,18 @@ y (life_expectancy) = X (democracy_index, consumer_price_index, gender_ratio_mal
 
 
 ## Dashboard
-The dashboard is being created in Tableau (https://public.tableau.com/app/profile/nancy.condon#!/).  The purpose of the dashboard is to let the user see components of the raw data that made up the final model for better understanding.  The following tables have been created:
+The dashboard is being created in Tableau (https://public.tableau.com/app/profile/nancy.condon#!/). 
 
-![image](https://user-images.githubusercontent.com/89953246/151725355-6da69b96-2c97-4043-b275-de0052bf3a68.png)
+![image](https://user-images.githubusercontent.com/89953246/151729742-2a2dcaa9-57c8-418b-a518-94da229e3e22.png)
 
+![image](https://user-images.githubusercontent.com/89953246/151729767-ec06bb8e-a100-481b-9e77-1915ec0c8487.png)
+
+![image](https://user-images.githubusercontent.com/89953246/151729810-5587ac24-8304-4613-acab-c12ab6ba2754.png)
 
 
 ## Google Slides
-
+Current Slides:
+https://docs.google.com/presentation/d/1suT01KAXhyTDDtzER3DdT4hMqMwAjre-FVmi1HuGfZI/edit?usp=sharing
 
 
 
