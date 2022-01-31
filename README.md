@@ -89,7 +89,7 @@ y (life_expectancy) = X (democracy_index, consumer_price_index, gender_ratio_mal
 
 
 ## Dashboard
-The dashboard is being created in Tableau (https://public.tableau.com/app/profile/nancy.condon#!/). 
+The dashboard is located in Tableau (https://public.tableau.com/app/profile/nancy.condon#!/). 
 
 ![image](https://user-images.githubusercontent.com/89953246/151729742-2a2dcaa9-57c8-418b-a518-94da229e3e22.png)
 
