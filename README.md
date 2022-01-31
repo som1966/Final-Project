@@ -41,59 +41,35 @@ The data was ETL - loaded, transformed (removing null values, unnecessary column
 
 ## Exploring Models
 
-In considering models for the dataset and questions to be answered, Multiple Linear Regression was the better choice because the data was not broken down by classification.
+In considering models for the dataset and questions to be answered, Multiple Linear Regression was the better choice because the data was not broken down by classification and the dataset is small of only 100 datapoints!
 
-### Model 1
+### Model 1: Multiple Variable Linear Regression
 
-First, Multiple Linear Regression was used to to predict outcome (Life Ladder)
+First, Multiple Linear Regression was used to find the relationship of the x-variables with the y-variable (Life Ladder). 
 
-y (life_ladder) = X (democracy_index, consumer_price_index, gender_ratio_males_per100_female, infant_mortality, life_expectancy, per_capita_gdp_dollars, population_density, safe_drinking_water_access, seats_held_by_women_pct, unemployment_rate)
+y (life_ladder) Vs X ('democracy_index', 'consumer_price_index', 'gender_ratio_males_per100_female', 'infant_mortality_per1000_births', 'life_expectancy', 'per_capita_gdp_dollars', 'population_density', 'safe_drinking_water_access_pct', 'seats_held_by_women_pct', 'unemployment_rate')
 
-![image](https://user-images.githubusercontent.com/89953246/150646356-bd64f527-792a-4c0f-92ea-1c6e36fda88d.png)
+The result for all the x-variables were : 
+R2score: 0.636295405929806
+root mean squared error:  0.4689012451019692
 
-This model's R2 came to 0.31, indicating there was little correlation between the predicted and observed values.  Three of the lowest features were dropped and the model was rerun with no significant change. 
+![alt text](https://github.com/Zohairk4help/gwu_groupProject_happiness/blob/main/present_2ndseg/R2ScoreForallvariable.PNG?raw=true)
 
-![image](https://user-images.githubusercontent.com/89953246/150646398-f9fa4bb1-251c-456f-8a60-7b72380b875f.png)
+ref: https://github.com/Zohairk4help/gwu_groupProject_happiness/blob/main/present_2ndseg/R2ScoreForallvariable.PNG
 
-![image](https://user-images.githubusercontent.com/89953246/150646554-29d086e9-2a5b-46b0-a3c1-e67bc7acc2a5.png)
+  As this model's R2 came to be 0.636 with different p_values, indicating there was little correlation between the predicted and observed values.  It was decided to drop the highest p_values for X-variables up until the point the model has its least RMSE score and the reasonable R2 scores.
 
-## Multiple Linear Regression was used to predict outcome again (3 features dropped)
-The following features were dropped- unemployment_rate, population_density, and consumer_price_index.
-The accuracy dropped to 0.23.
+![alt text](https://github.com/Zohairk4help/gwu_groupProject_happiness/blob/main/present_2ndseg/DFshowingrerunningML_dropingx-variables.PNG?raw=true)
 
-![image](https://user-images.githubusercontent.com/89953246/150650140-84269bc0-2a72-4e5d-b143-3ef07782ddc9.png)
+https://github.com/Zohairk4help/gwu_groupProject_happiness/blob/main/present_2ndseg/DFshowingrerunningML_dropingx-variables.PNG
 
-### Model 2 Random Forest Regressor
+## DF showing the results after rerunning of the Multiple Linear Regression after one-by-one features dropping: 
+The following features were dropped: "country_name", "country_code", "life_expectancy" & "consumer_price_index"
+The accuracy (RMSE-Score) dropped to 0.118.
 
-To enhance the multiple regression, RandomForest Regressor was used. Random Forest Regressor is a supervised learning algorithm which uses ensemble learning using multiple regression decision trees and then calculates the average of the multiple decision trees.
+![image](https://github.com/Zohairk4help/gwu_groupProject_happiness/blob/main/present_2ndseg/ML_LinearRegR2score_RMSEscore.PNG)
 
-![Random Forest Image](https://user-images.githubusercontent.com/89953246/150585434-feeab381-7675-4c84-8681-242f9f0b358d.jpeg)
-
-The original model (see below) was rerun using Random Forest Regressor.
-
-y (life_ladder) = X (democracy_index, consumer_price_index, gender_ratio_males_per100_female, infant_mortality, life_expectancy, per_capita_gdp_dollars, population_density, safe_drinking_water_access, seats_held_by_women_pct, unemployment_rate)
-
-![image](https://user-images.githubusercontent.com/89953246/150684948-81695bd6-5a19-427e-a0d4-2f4c44566928.png)
-
-![image](https://user-images.githubusercontent.com/89953246/150684981-a0bf049f-77ba-44a5-a199-eb4824f9dc6c.png)
-
-![image](https://user-images.githubusercontent.com/89953246/150685010-bf6998c3-0cda-4074-a820-3df8511fe68b.png)
-
-Using the Random Forest Regressor, improved the R2 = 0.36; still not reflecting a good fit.  
-
-### Model 3 Random Forest Regressor And New (Y)
-
-The team also discussed adding additional data or change the model.  A new model was developed for the RandomForestRegressor by switching the (y) to life_expectancy and adding life_ladder to (x).
-
-y (life_expectancy) = X (democracy_index, consumer_price_index, gender_ratio_males_per100_female, infant_mortality, life_ladder, per_capita_gdp_dollars, population_density, safe_drinking_water_access, seats_held_by_women_pct, unemployment_rate)
-
-![image](https://user-images.githubusercontent.com/89953246/150590506-b7dfb4a4-6aa3-4a3f-a31b-70192afbccb4.png)
-
-![image](https://user-images.githubusercontent.com/89953246/150590034-f9122fec-9482-4b14-b774-58add097c4e7.png)
-
-![image](https://user-images.githubusercontent.com/89953246/150590297-b7ef3b57-447f-401a-8a34-095d171f3d9c.png)
-
-![image](https://user-images.githubusercontent.com/89953246/150590411-033027e2-9a2d-4746-8a9d-2f41d908a873.png)
+###### please Note: for the Model 2 (Random Forest Regressor) and the Model 3 (Random Forest Regressor), working on seeing and comparing the results.
 
 
 
