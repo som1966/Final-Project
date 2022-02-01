@@ -44,7 +44,7 @@ CREATE TABLE life_expectancy (
 
 CREATE TABLE per_capita_gdp (
      country_code INT NOT NULL PRIMARY KEY,
-     per_capita_gdp_dollars MONEY NOT NULL,
+     per_capita_gdp_dollars INT NOT NULL,
      FOREIGN KEY (country_code) REFERENCES country(country_code)
 );
 

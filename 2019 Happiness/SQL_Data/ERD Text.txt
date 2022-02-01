@@ -36,7 +36,7 @@ life_expectancy decimal
 per_capita_gdp
 -
 country_code int pk fk - country.country_code
-per_capita_gdp_dollars money
+per_capita_gdp_dollars int
 
 population_density
 -
