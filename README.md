@@ -88,7 +88,7 @@ The dashboard is located in Tableau (https://public.tableau.com/app/profile/nanc
 
   - Soci-economic factors  can influence the Happiness Index.
   
-  - GDP, Gender ratio, % Safe Drinking Water, % Women holding government seats was shown to increase the Happiness Index.
+  - GDP, Gender ratio, % Safe Drinking Water, % Women holding government seats were shown to increase the Happiness Index.
   
   - The use of public policy does provide an opportunity to improve a country’s happiness.
   
