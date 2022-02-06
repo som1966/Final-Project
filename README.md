@@ -72,13 +72,17 @@ The accuracy (RMSE-Score) dropped to 0.118.
 
 
 ## Dashboard
+The dashboard reflects three parts of the project: 
+
+1) User's ability to interact with the soci-economic data tables for each country utilized;
+2) Provides an overview of the machine learning method and revewi the results of the final model.
+3) Allow the user to be directed to the actual 2019 World Happiness Report.
+
+![image](https://user-images.githubusercontent.com/89953246/152698154-1ff305b3-482c-4992-a9d6-2ebbb7dae52f.png)
+
 The dashboard is located in Tableau (https://public.tableau.com/app/profile/nancy.condon#!/). 
 
-![image](https://user-images.githubusercontent.com/89953246/151729742-2a2dcaa9-57c8-418b-a518-94da229e3e22.png)
-
-![image](https://user-images.githubusercontent.com/89953246/151729767-ec06bb8e-a100-481b-9e77-1915ec0c8487.png)
-
-![image](https://user-images.githubusercontent.com/89953246/151729810-5587ac24-8304-4613-acab-c12ab6ba2754.png)
+## Conclusion and Recommendations
 
 
 ## Google Slides
