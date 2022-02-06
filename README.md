@@ -84,6 +84,27 @@ The dashboard is located in Tableau (https://public.tableau.com/app/profile/nanc
 
 ## Conclusion and Recommendations
 
+### Conclusions:
+
+  - Soci-economic factors  can influence the Happiness Index.
+  
+  - GDP, Gender ratio, % Safe Drinking Water, % Women holding government seats was shown to increase the Happiness Index.
+  
+  - The use of public policy does provide an opportunity to improve a country’s happiness.
+  
+### Recommendations for future analyses: 
+
+  - Larger dataset, not all countries had the required data.
+  
+  - Classification of features and utilizing Logistic Regression, Random Forest or Neural Networks.
+  
+  - Additional datasets that may have more specificity, such as:
+  
+      The use of technology / cell phone usage
+      
+      Health indices
+
+      Industrialization
 
 ## Google Slides
 Current Slides:
