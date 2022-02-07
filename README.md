@@ -46,11 +46,11 @@ The data was ETL - loaded, transformed (removing null values, unnecessary column
 In considering models for the dataset and questions to be answered, Multiple Linear Regression was the better choice because the datatype was Continuous (float) and the dataset is small of only 100 datapoints!
 
 
-Since ML linear model is not really train-split dependent, we ***still chose to have 90/10 train-test split*** as it was giving the best and satisfying Regression value and RMSE score, which is the indication of our Models’ accuracy score for continuous data type, which we dealt in the Project.
+Since ML linear model is not really train-split dependent[[2]](#2), we ***still chose to have 90/10 train-test split*** as it was giving the best and satisfying Regression value and RMSE score, which is the indication of our Models’ accuracy score for continuous data type, which we dealt in the Project.
 
-###  The question is **Why** and **How** the decision-in-picking the Linear Model with 90/10 Splits was made? 
+###  The question is ***Why*** and ***How*** the decision-in-picking the Linear Model with 90/10 Splits was made? 
 -------------------------------------------
-Due to the dealing of the small datasets and the continuous data types, we felt constrained by our choice of choosing an appropriate model. As the total data-points are 100, we just explored our choices to find an appropriate model for determining the best results by first attempting to use the models: Linear Regression and Random Forest Regression.
+Due to the dealing of the small datasets and the continuous data types, we felt constrained by our choice of choosing an appropriate model. As the total data-points are 100, we just explored our choices to find an appropriate model for determining the best results by first attempting to use the models: Multiple Linear Regression and Random Forest Regression.
 
 In the first week of the project, the 75/25 train_test_splits was used in both of the models to just explore the results by using all the 10 X-variables with the y-variable(life_ladder). The results were: 
 | |Multiple-Linear Regression |Random-Forest Regression|
@@ -73,7 +73,7 @@ Please see the following pictures:
 
 >As it is categorically seen that both models are not giving satisfying scores, we then concentrated on determining No_splits’ results for the Linear Regression model only due to the size of the dataset being used. 
 
->At this point, leaving Random Forest Regression (RFR) behind was an appropriate decision as we feared its limitation, which is “Overfitting”, and hence it will be a bad idea to use for our dataset. 
+>At this point, leaving Random Forest Regression (RFR) behind was an appropriate decision as we feared its limitation, which is “Overfitting” [[1]](#1), and hence it will be a bad idea to use for our dataset. 
 
 >Hence the following result was determined when no splits was used for all the X-variables to find their relationships with Y-variable(life_ladder): 
 
@@ -82,7 +82,7 @@ Please see the following pictures:
 |Train_Test_Splits used:|	NaN|
 |X-variables used:|	All 10|
 |Regression Value (R<sup>2</sup>)|	0.747|
-|RMSE score|	0.776|
+|RMSE score|	0.530|
 
 <figure>
   <img src="LinearRegression_75_25_Splits - zoOm.PNG" width="450" height="50">
@@ -94,19 +94,19 @@ Please see the following pictures:
 ---
 
 
-><p> After verifying our Linear - Regressional R<sup>2</sup>-score with that of OLS (Ordinary Least Square) Model, we paid heed on RMSE score, which was noticed to be the same when we ran 75/25 splits. 
+><p> After verifying our Linear - Regressional R<sup>2</sup>-score with that of OLS (Ordinary Least Square) Model, we paid heed on NaN splits' RMSE score, which was noticed to be the lesser than that of 75/25 splits. 
 
->Therefore, for the sake of having an accurate Linear Regression Model, lowering the RMSE-score more was the idea that was imagined.
+>Therefore, for the sake of having an accurate Linear Regression Model, further lowering the RMSE-score was the end goal imagined.
  
 >In order to do that, we decided to delete the high p-values’ X-variables from the models one-by-one to see the effect on the RMSE score, as well as on R<sup>2</sup> score. 
 
-The following is the result by rerunning the model 7 times:</p>
+The following dataframe depicts the 7-times-rerunning of the model after deleting higher than 0.05% P-values of X-variables: </p>
 <figure>
   <img src="no_splits_scores_linearReg.PNG" width="450" height="150">
   <figcaption>Picture 2: Rerunning of Multiple Linear Regression Model with No Splits.</figcaption>
 </figure>
 
-><p>Thus, it is noticed that there is no significant effects on the two columns [“R<sup>2</sup>_score” and “rmse_scores”]. Hence, we concentrated on Train_Test_splits by switching it to either be 80/20 or 90/10 train_test_splits as on a trial_and_error basis. This decision was made under the scrutiny and the guidance of our Professor Dave Gillis and TAs [Mr Zeb Smith and Mr Hunter Pack]. </p>
+><p>Thus, it is noticed that there is no significant effects on the two columns [“R<sup>2</sup>_score” and “rmse_scores”]. That is why, we concentrated on Train_Test_splits by switching it to either be 80/20 or 90/10 train_test_splits on a trial_and_error basis. This decision was made under the scrutiny and the guidance of our Professor Dave Gillis and TAs [Mr Zeb Smith and Mr Hunter Pack]. </p>
 
   
 ><p>The same process of deleting the high P-values' X-variables and rerunning of the model was repeated. The following result was found: </p>
@@ -122,7 +122,7 @@ The following is the result by rerunning the model 7 times:</p>
 </figure>
 
 
-><p> After seeing the picture, it is clearly seen that the model works best when the highest p-values’ X-variables (“life_expectancy" & "consumer_price_index") is deleted by having the best and satisfying R<sup>2</sup> and the least RMSE scores.</p>
+><p> After seeing the picture, it is clearly seen that the model works best when the highest p-values’ X-variables (“life_expectancy" & "consumer_price_index") are deleted by having the best and satisfying R<sup>2</sup> and the least RMSE scores.</p>
 
 
 <figure>
@@ -158,9 +158,12 @@ The following picture shows the Line equation of the project.
       - 0.03634(Unemployment_Rate_%)
 </p> 
 
-Reference: https://www.geeksforgeeks.org/ml-advantages-and-disadvantages-of-linear-regression/
+Reference:
+1. Keboola . (n.d.). The Ultimate Guide to Random Forest regression. The Ultimate Guide to Random Forest Regression. Retrieved February 7, 2022, from https://www.keboola.com/blog/random-forest-regression 
 
+2. ML - advantages and disadvantages of linear regression. GeeksforGeeks. (2020, June 3). Retrieved February 7, 2022, from https://www.geeksforgeeks.org/ml-advantages-and-disadvantages-of-linear-regression/ 
 
+3. https://rpubs.com/mpfoley73/527767
 
 ## Dashboard
 The dashboard reflects three parts of the project: 
