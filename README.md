@@ -89,6 +89,11 @@ Please see the following pictures:
   <figcaption>Picture 1c: Multiple Linear Rgression of all X-variables Vs Y-variable (Life_ladder) with 75/25 Splits.</figcaption>
 </figure>
 
+
+
+---
+
+
 ><p> After verifying our Linear - Regressional R<sup>2</sup>-score with that of OLS (Ordinary Least Square) Model, we paid heed on RMSE score, which was noticed to be the same when we ran 75/25 splits. 
 
 >Therefore, for the sake of having an accurate Linear Regression Model, lowering the RMSE-score more was the idea that was imagined.
