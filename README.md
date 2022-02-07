@@ -40,34 +40,112 @@ The data was ETL - loaded, transformed (removing null values, unnecessary column
 
 
 ## Exploring Models
+---
+---
 
-In considering models for the dataset and questions to be answered, Multiple Linear Regression was the better choice because the data was not broken down by classification and the dataset is small of only 100 datapoints!
-
-### Model 1: Multiple Variable Linear Regression
-
-First, Multiple Linear Regression was used to find the relationship of the x-variables with the y-variable (Life Ladder). 
-
-y (life_ladder) Vs X ('democracy_index', 'consumer_price_index', 'gender_ratio_males_per100_female', 'infant_mortality_per1000_births', 'life_expectancy', 'per_capita_gdp_dollars', 'population_density', 'safe_drinking_water_access_pct', 'seats_held_by_women_pct', 'unemployment_rate')
-
-The result for all the x-variables were : 
-R2score: 0.636295405929806
-root mean squared error:  0.4689012451019692
-
-![alt text](https://github.com/Zohairk4help/gwu_groupProject_happiness/blob/main/present_2ndseg/R2ScoreForallvariable.PNG?raw=true)
+In considering models for the dataset and questions to be answered, Multiple Linear Regression was the better choice because the datatype was Continuous (float) and the dataset is small of only 100 datapoints!
 
 
-  As this model's R2 came to be 0.636 with different p_values, indicating there was little correlation between the predicted and observed values.  It was decided to drop the highest p_values for X-variables up until the point the model has its least RMSE score and the reasonable R2 scores.
+Since ML linear model is not really train-split dependent, we ***still chose to have 90/10 train-test split*** as it was giving the best and satisfying Regression value and RMSE score, which is the indication of our Models’ accuracy score for continuous data type, which we dealt in the Project.
 
-![alt text](https://github.com/Zohairk4help/gwu_groupProject_happiness/blob/main/present_2ndseg/DFshowingrerunningML_dropingx-variables.PNG?raw=true)
+###  The question is **Why** and **How** the decision-in-picking the Linear Model with 90/10 Splits was made? 
+-------------------------------------------
+Due to the dealing of the small datasets and the continuous data types, we felt constrained by our choice of choosing an appropriate model. As the total data-points are 100, we just explored our choices to find an appropriate model for determining the best results by first attempting to use the models: Linear Regression and Random Forest Regression.
+
+In the first week of the project, the 75/25 train_test_splits was used in both of the models to just explore the results by using all the 10 X-variables with the y-variable(life_ladder). The results were: 
+| |Multiple-Linear Regression |Random-Forest Regression|
+|:---------------|:------|:----------|
+Train_Test_Splits used:|	75/10|	75/10|
+|X-variables used:|	All 10|	All 10|
+|Regression Value (R<sup>2</sup>)|	0.312	|0.376|
+|RMSE score|	0.776|	0.739
+
+Please see the following pictures:
+<figure>
+  <img src="RFR_75_25_Splits_1stweek.PNG" width="250" height="250">
+  <figcaption>Picture 1a: Random Forest Regression of all X-variables Vs Y-variable (Life_ladder) with 75/25 Splits.</figcaption>
+</figure>
+
+<figure>
+  <img src="RFR_75_25_Splits_1stweek.PNG" width="250" height="250">
+  <figcaption>Picture 1b: Multiple linear  Regression of all X-variables Vs Y-variable (Life_ladder) with 75/25 Splits.</figcaption>
+</figure>
+
+As it is categorically seen that both models are not giving satisfying scores, we then concentrated on determining No_splits’ results for the Linear Regression model only due to the size of the dataset being used. 
+
+At this point, leaving Random Forest Regression (RFR) behind was an appropriate decision as we feared its limitation, which is “Overfitting”, and hence it will be a bad idea to use for our dataset. 
+
+Hence the following result was determined when no splits was used for all the X-variables to find their relationships with Y-variable(life_ladder): 
+
+|	|Multiple-Linear Regression|
+|:---------------|:----------|
+|Train_Test_Splits used:|	NaN|
+|X-variables used:|	All 10|
+|Regression Value (R<sup>2</sup>)|	0.747|
+|RMSE score|	0.776|
+
+<figure>
+  <img src="LinearRegression_75_25_Splits - zoOm.PNG" width="250" height="250">
+  <figcaption>Picture 1c: Multiple Linear Rgression of all X-variables Vs Y-variable (Life_ladder) with 75/25 Splits.</figcaption>
+</figure>
+
+After verifying our Linear - Regressional R<sup>2</sup>-score with that of OLS (Ordinary Least Square) Model, we paid heed on RMSE score, which was noticed to be the same when we ran 75/25 splits. 
+Therefore, for the sake of having an accurate Linear Regression Model, lowering the RMSE-score more was the idea that was imagined.
+ 
+In order to do that, we decided to delete the high p-values’ X-variables from the models one-by-one to see the effect on the RMSE score, as well as on R<sup>2</sup> score. 
+
+The following is the result by rerunning the model 7 times:
+<figure>
+  <img src="no_splits_scores_linearReg.PNG" width="250" height="250">
+  <figcaption>Picture 2: Rerunning of Multiple Linear Regression Model with No Splits.</figcaption>
+</figure>
+
+Thus, it is noticed that there is no significant effects on the two columns [“R<sup>2</sup>_score” and “rmse_scores”]. Hence, we concentrated on Train_Test_splits by switching it to either be 80/20 or 90/10 train_test_splits as on a trial_and_error basis. This decision was made under the scrutiny and the guidance of our Professor Dave Gillis and TAs [Mr Zeb Smith and Mr Hunter Pack]. 
+
+The same process of deleting the high P-values' X-variables and rerunning of the model was repeated. The following result was found: 
+
+<figure>
+  <img src="80_20_split_scores_linearReg.PNG" width="250" height="250">
+  <figcaption>Picture 3: Rerunning of Multiple Linear Regression Model with 80/20 Splits.</figcaption>
+</figure>
+
+<figure>
+  <img src="90_10_splits_scores_linearReg.PNG" width="250" height="250">
+  <figcaption>Picture 4: Rerunning of Multiple Linear Regression Model with 90/10 Splits.</figcaption>
+</figure>
+
+After seeing the picture, it is clearly seen that the model works best when the highest p-values’ X-variables (“life_expectancy" & "consumer_price_index") is deleted by having the best and satisfying R<sup>2</sup> and the least RMSE scores.
+
+<figure>
+  <img src="scores_comparisons.png" width="250" height="250">
+  <figcaption>Picture 5: Rerunning of Multiple Linear Regression Model with All-the-Splits.</figcaption>
+</figure>
 
 
-## DF showing the results after rerunning of the Multiple Linear Regression after one-by-one features dropping: 
-The following features were dropped: "country_name", "country_code", "life_expectancy" & "consumer_price_index"
-The accuracy (RMSE-Score) dropped to 0.118.
+## Result: 
+With the 90/10 Splits, the best RMSE and  R<sup>2</sup> scores were satisfyingly achieved that enabled us to find the corelation of each X-variables with the Happiness (Y-variable). 
 
-![image](https://github.com/Zohairk4help/gwu_groupProject_happiness/blob/main/present_2ndseg/ML_LinearRegR2score_RMSEscore.PNG)
+The following picture shows the Line equation of the project. 
 
-###### please Note: for the Model 2 (Random Forest Regressor) and the Model 3 (Random Forest Regressor), working on seeing and comparing the results.
+<figure>
+  <img src="result_lineEq_DF.PNG"
+   width="250" height="250">
+  <figcaption>Picture 6: Dataframe depicts the Multiple Variable Linear Regressional Line Equation with the Best RMSE and R<sup>2</sup> scores.</figcaption>
+</figure>
+
+Happiness = 3.39 (intercept)
+
+      + 0.0077(Democracy_Index) 
+      + 0.0098(Gender_Ratio_Male_per100_Females) 
+      - 0.0084(Infant_Mortality_per1000_births) 
+      + 0.00001(Per_Capita_GDP_$) 
+      - 0.00009(Population_Density_%) 
+      + 0.01033(Drinking_Water_%) 
+      + 0.01322(Women_Seats_%) 
+      - 0.03634(Unemployment_Rate_%)
+
+
+Reference: https://www.geeksforgeeks.org/ml-advantages-and-disadvantages-of-linear-regression/
 
 
 
