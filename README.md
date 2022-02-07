@@ -71,11 +71,11 @@ Please see the following pictures:
   <figcaption>Picture 1b: Multiple linear  Regression of all X-variables Vs Y-variable (Life_ladder) with 75/25 Splits.</figcaption>
 </figure>
 
-As it is categorically seen that both models are not giving satisfying scores, we then concentrated on determining No_splits’ results for the Linear Regression model only due to the size of the dataset being used. 
+>As it is categorically seen that both models are not giving satisfying scores, we then concentrated on determining No_splits’ results for the Linear Regression model only due to the size of the dataset being used. 
 
-At this point, leaving Random Forest Regression (RFR) behind was an appropriate decision as we feared its limitation, which is “Overfitting”, and hence it will be a bad idea to use for our dataset. 
+>At this point, leaving Random Forest Regression (RFR) behind was an appropriate decision as we feared its limitation, which is “Overfitting”, and hence it will be a bad idea to use for our dataset. 
 
-Hence the following result was determined when no splits was used for all the X-variables to find their relationships with Y-variable(life_ladder): 
+>Hence the following result was determined when no splits was used for all the X-variables to find their relationships with Y-variable(life_ladder): 
 
 |	|Multiple-Linear Regression|
 |:---------------|:----------|
@@ -89,10 +89,11 @@ Hence the following result was determined when no splits was used for all the X-
   <figcaption>Picture 1c: Multiple Linear Rgression of all X-variables Vs Y-variable (Life_ladder) with 75/25 Splits.</figcaption>
 </figure>
 
-<p> After verifying our Linear - Regressional R<sup>2</sup>-score with that of OLS (Ordinary Least Square) Model, we paid heed on RMSE score, which was noticed to be the same when we ran 75/25 splits. 
-Therefore, for the sake of having an accurate Linear Regression Model, lowering the RMSE-score more was the idea that was imagined.
+><p> After verifying our Linear - Regressional R<sup>2</sup>-score with that of OLS (Ordinary Least Square) Model, we paid heed on RMSE score, which was noticed to be the same when we ran 75/25 splits. 
+
+>Therefore, for the sake of having an accurate Linear Regression Model, lowering the RMSE-score more was the idea that was imagined.
  
-In order to do that, we decided to delete the high p-values’ X-variables from the models one-by-one to see the effect on the RMSE score, as well as on R<sup>2</sup> score. 
+>In order to do that, we decided to delete the high p-values’ X-variables from the models one-by-one to see the effect on the RMSE score, as well as on R<sup>2</sup> score. 
 
 The following is the result by rerunning the model 7 times:</p>
 <figure>
@@ -100,10 +101,10 @@ The following is the result by rerunning the model 7 times:</p>
   <figcaption>Picture 2: Rerunning of Multiple Linear Regression Model with No Splits.</figcaption>
 </figure>
 
-<p>Thus, it is noticed that there is no significant effects on the two columns [“R<sup>2</sup>_score” and “rmse_scores”]. Hence, we concentrated on Train_Test_splits by switching it to either be 80/20 or 90/10 train_test_splits as on a trial_and_error basis. This decision was made under the scrutiny and the guidance of our Professor Dave Gillis and TAs [Mr Zeb Smith and Mr Hunter Pack]. </p>
+><p>Thus, it is noticed that there is no significant effects on the two columns [“R<sup>2</sup>_score” and “rmse_scores”]. Hence, we concentrated on Train_Test_splits by switching it to either be 80/20 or 90/10 train_test_splits as on a trial_and_error basis. This decision was made under the scrutiny and the guidance of our Professor Dave Gillis and TAs [Mr Zeb Smith and Mr Hunter Pack]. </p>
 
   
-<p>The same process of deleting the high P-values' X-variables and rerunning of the model was repeated. The following result was found: </p>
+><p>The same process of deleting the high P-values' X-variables and rerunning of the model was repeated. The following result was found: </p>
 
 <figure>
   <img src="80_20_split_scores_linearReg.PNG" width="450" height="150">
@@ -116,7 +117,7 @@ The following is the result by rerunning the model 7 times:</p>
 </figure>
 
 
-<p> After seeing the picture, it is clearly seen that the model works best when the highest p-values’ X-variables (“life_expectancy" & "consumer_price_index") is deleted by having the best and satisfying R<sup>2</sup> and the least RMSE scores.</p>
+><p> After seeing the picture, it is clearly seen that the model works best when the highest p-values’ X-variables (“life_expectancy" & "consumer_price_index") is deleted by having the best and satisfying R<sup>2</sup> and the least RMSE scores.</p>
 
 
 <figure>
@@ -129,7 +130,7 @@ The following is the result by rerunning the model 7 times:</p>
 ---
 
 ## Result: 
-With the 90/10 Splits, the best RMSE and  R<sup>2</sup> scores were satisfyingly achieved that enabled us to find the corelation of each X-variables with the Happiness (Y-variable). 
+>With the 90/10 Splits, the best RMSE and  R<sup>2</sup> scores were satisfyingly achieved that enabled us to find the corelation of each X-variables with the Happiness (Y-variable). 
 
 The following picture shows the Line equation of the project. 
 
@@ -140,8 +141,8 @@ The following picture shows the Line equation of the project.
 </figure>
 
 
-Happiness = 3.39 (intercept)
-
+><p>Happiness = 3.39 (intercept)
+  
       + 0.0077(Democracy_Index) 
       + 0.0098(Gender_Ratio_Male_per100_Females) 
       - 0.0084(Infant_Mortality_per1000_births) 
@@ -150,7 +151,7 @@ Happiness = 3.39 (intercept)
       + 0.01033(Drinking_Water_%) 
       + 0.01322(Women_Seats_%) 
       - 0.03634(Unemployment_Rate_%)
-
+</p> 
 
 Reference: https://www.geeksforgeeks.org/ml-advantages-and-disadvantages-of-linear-regression/
 
