@@ -85,42 +85,48 @@ Hence the following result was determined when no splits was used for all the X-
 |RMSE score|	0.776|
 
 <figure>
-  <img src="LinearRegression_75_25_Splits - zoOm.PNG" width="250" height="250">
+  <img src="LinearRegression_75_25_Splits - zoOm.PNG" width="450" height="50">
   <figcaption>Picture 1c: Multiple Linear Rgression of all X-variables Vs Y-variable (Life_ladder) with 75/25 Splits.</figcaption>
 </figure>
 
-After verifying our Linear - Regressional R<sup>2</sup>-score with that of OLS (Ordinary Least Square) Model, we paid heed on RMSE score, which was noticed to be the same when we ran 75/25 splits. 
+<p> After verifying our Linear - Regressional R<sup>2</sup>-score with that of OLS (Ordinary Least Square) Model, we paid heed on RMSE score, which was noticed to be the same when we ran 75/25 splits. 
 Therefore, for the sake of having an accurate Linear Regression Model, lowering the RMSE-score more was the idea that was imagined.
  
 In order to do that, we decided to delete the high p-values’ X-variables from the models one-by-one to see the effect on the RMSE score, as well as on R<sup>2</sup> score. 
 
-The following is the result by rerunning the model 7 times:
+The following is the result by rerunning the model 7 times:</p>
 <figure>
-  <img src="no_splits_scores_linearReg.PNG" width="250" height="250">
+  <img src="no_splits_scores_linearReg.PNG" width="450" height="150">
   <figcaption>Picture 2: Rerunning of Multiple Linear Regression Model with No Splits.</figcaption>
 </figure>
 
-Thus, it is noticed that there is no significant effects on the two columns [“R<sup>2</sup>_score” and “rmse_scores”]. Hence, we concentrated on Train_Test_splits by switching it to either be 80/20 or 90/10 train_test_splits as on a trial_and_error basis. This decision was made under the scrutiny and the guidance of our Professor Dave Gillis and TAs [Mr Zeb Smith and Mr Hunter Pack]. 
+<p>Thus, it is noticed that there is no significant effects on the two columns [“R<sup>2</sup>_score” and “rmse_scores”]. Hence, we concentrated on Train_Test_splits by switching it to either be 80/20 or 90/10 train_test_splits as on a trial_and_error basis. This decision was made under the scrutiny and the guidance of our Professor Dave Gillis and TAs [Mr Zeb Smith and Mr Hunter Pack]. </p>
 
-The same process of deleting the high P-values' X-variables and rerunning of the model was repeated. The following result was found: 
+  
+<p>The same process of deleting the high P-values' X-variables and rerunning of the model was repeated. The following result was found: </p>
 
 <figure>
-  <img src="80_20_split_scores_linearReg.PNG" width="250" height="250">
+  <img src="80_20_split_scores_linearReg.PNG" width="450" height="150">
   <figcaption>Picture 3: Rerunning of Multiple Linear Regression Model with 80/20 Splits.</figcaption>
 </figure>
 
 <figure>
-  <img src="90_10_splits_scores_linearReg.PNG" width="250" height="250">
+  <img src="90_10_splits_scores_linearReg.PNG" width="450" height="150">
   <figcaption>Picture 4: Rerunning of Multiple Linear Regression Model with 90/10 Splits.</figcaption>
 </figure>
 
-After seeing the picture, it is clearly seen that the model works best when the highest p-values’ X-variables (“life_expectancy" & "consumer_price_index") is deleted by having the best and satisfying R<sup>2</sup> and the least RMSE scores.
+
+<p> After seeing the picture, it is clearly seen that the model works best when the highest p-values’ X-variables (“life_expectancy" & "consumer_price_index") is deleted by having the best and satisfying R<sup>2</sup> and the least RMSE scores.</p>
+
 
 <figure>
-  <img src="scores_comparisons.png" width="250" height="250">
+  <img src="scores_comparisons.png" width="450" height="100">
   <figcaption>Picture 5: Rerunning of Multiple Linear Regression Model with All-the-Splits.</figcaption>
 </figure>
 
+
+
+---
 
 ## Result: 
 With the 90/10 Splits, the best RMSE and  R<sup>2</sup> scores were satisfyingly achieved that enabled us to find the corelation of each X-variables with the Happiness (Y-variable). 
@@ -129,9 +135,10 @@ The following picture shows the Line equation of the project.
 
 <figure>
   <img src="result_lineEq_DF.PNG"
-   width="250" height="250">
+   width="450" height="70">
   <figcaption>Picture 6: Dataframe depicts the Multiple Variable Linear Regressional Line Equation with the Best RMSE and R<sup>2</sup> scores.</figcaption>
 </figure>
+
 
 Happiness = 3.39 (intercept)
 
