@@ -33,9 +33,11 @@ The data was ETL - loaded, transformed (removing null values, unnecessary column
 
 ![ETL](https://user-images.githubusercontent.com/89953246/150582559-3ff9a15a-2f0f-47fa-8502-4f360310cb9d.png)
 
-### Tool Box
+### Technology
 
-![image](https://user-images.githubusercontent.com/89953246/150589223-dd3436f9-1f6a-4249-aa58-b1d8d348e7f1.png)
+The team utilized 
+
+![image](https://user-images.githubusercontent.com/89953246/152896282-0895da4d-ade2-4ae6-97c2-4f23c53a1030.png)
 
 
 
