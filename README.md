@@ -148,7 +148,7 @@ The following picture shows the Line equation of the project.
 </figure>
 
 
-</p> ![image](https://user-images.githubusercontent.com/89953246/152898239-cf8b15d3-3396-4cfb-82cf-b4e5521fa304.png)
+![image](https://user-images.githubusercontent.com/89953246/152898239-cf8b15d3-3396-4cfb-82cf-b4e5521fa304.png)
 
 
 Reference:
