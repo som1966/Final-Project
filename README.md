@@ -24,9 +24,10 @@ Data Dictionary:
 
 ![image](https://user-images.githubusercontent.com/89953246/151730062-d48f97f0-8414-4239-bfca-f8490e694423.png)
 
-The data was ETL - loaded, transformed (removing null values, unnecessary columns, joined with other tables and created dataframes.
 
-Initial dataset included 235 countries and 10 features
+
+Initial dataset included 235 countries and 10 features.  
+The data was ETL - loaded, transformed (removing null values, unnecessary columns, joined with other tables and created dataframes.
 
 ![ETL](https://user-images.githubusercontent.com/89953246/150582559-3ff9a15a-2f0f-47fa-8502-4f360310cb9d.png)
 
@@ -36,37 +37,24 @@ Technology, languages and algorithms utilized:
 
 ![image](https://user-images.githubusercontent.com/89953246/152896282-0895da4d-ade2-4ae6-97c2-4f23c53a1030.png)
 
-## Exploring Models -- Machine Learning
----
----
-
-In considering models for the dataset and questions to be answered, Multiple Linear Regression was the better choice because the datatype was Continuous (float) and the dataset is small of only 100 datapoints!
+## Machine Learning
 
 
-Since ML linear model is not really train-split dependent[[2]](#2), we ***still chose to have 90/10 train-test split*** as it was giving the best and satisfying Regression value and RMSE score, which is the indication of our Models’ accuracy score for continuous data type, which we dealt in the Project.
-
-###  The question is ***Why*** and ***How*** the decision-in-picking the Linear Model with 90/10 Splits was made? 
 -------------------------------------------
-Due to the dealing of the small datasets and the continuous data types, we felt constrained by our choice of choosing an appropriate model. As the total data-points are 100, we just explored our choices to find an appropriate model for determining the best results by first attempting to use the models: Multiple Linear Regression and Random Forest Regression.
 
-In the first week of the project, the 75/25 train_test_splits was used in both of the models to just explore the results by using all the 10 X-variables with the y-variable(life_ladder). The results were: 
+The first model performed was Linear Regression with a 75/25 train_test_splits with the following equation:
+y (Happines_Index) = 
+
 | |Multiple-Linear Regression |Random-Forest Regression|
 |:---------------|:------|:----------|
-Train_Test_Splits used:|	75/10|	75/10|
+Train_Test_Splits used:|	75/25|	75/25|
 |X-variables used:|	All 10|	All 10|
 |Regression Value (R<sup>2</sup>)|	0.312	|0.376|
 |RMSE score|	0.776|	0.739
 
-Please see the following pictures:
-<figure>
-  <img src="RFR_75_25_Splits_1stweek.PNG" width="250" height="250">
-  <figcaption>Picture 1a: Random Forest Regression of all X-variables Vs Y-variable (Life_ladder) with 75/25 Splits.</figcaption>
-</figure>
 
-<figure>
-  <img src="RFR_75_25_Splits_1stweek.PNG" width="250" height="250">
-  <figcaption>Picture 1b: Multiple linear  Regression of all X-variables Vs Y-variable (Life_ladder) with 75/25 Splits.</figcaption>
-</figure>
+
+
 
 >As it is categorically seen that both models are not giving satisfying scores, we then concentrated on determining No_splits’ results for the Linear Regression model only due to the size of the dataset being used. 
 
@@ -81,10 +69,6 @@ Please see the following pictures:
 |Regression Value (R<sup>2</sup>)|	0.747|
 |RMSE score|	0.530|
 
-<figure>
-  <img src="LinearRegression_75_25_Splits - zoOm.PNG" width="450" height="50">
-  <figcaption>Picture 1c: Multiple Linear Rgression of all X-variables Vs Y-variable (Life_ladder) with 75/25 Splits.</figcaption>
-</figure>
 
 
 
