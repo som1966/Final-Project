@@ -122,7 +122,7 @@ The dashboard is located in Tableau (https://public.tableau.com/app/profile/nanc
   
   - GDP, Gender ratio, % Safe Drinking Water, % Women holding government seats were shown to increase the Happiness Index.
   
-  - The use of public policy does provide an opportunity to improve a country’s happiness.
+  - Economic policy geared towards growth and infrastructure are key drivers in a countries happiness.
   
 ### Recommendations for future analyses: 
 
@@ -136,7 +136,9 @@ The dashboard is located in Tableau (https://public.tableau.com/app/profile/nanc
       
       Health indices
 
-      Industrialization
+      Education
+      
+      Religion/Social Capital
 
 ## Google Slides
 Current Slides:
