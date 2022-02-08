@@ -1,13 +1,7 @@
 # Final Project :  What Determines Happiness?
 
-## Topic
-The team was very interested in the World Happiness Index and wanted to see if there were other factors that will improve / predict the "Life Ladder Score".
-(The World Happiness Annual Report was started back in 2012 when the United Nations adopted a resolution: "Happiness: Towards a Holistic Definition of Development" to encourage countries to measure happiness and guide public policy.  The Happiness Index originates from the nation of Bhutan who uses measures gross national happiness instead of gross domestic product- Wikipedia)
-
-## Purpose of Analyss / Potential Questions
 
 ![image](https://user-images.githubusercontent.com/89953246/151729987-95ae97e6-dc31-4f6a-a53b-1697a6d63f16.png)
-
 
 1) Will any of the selected variables(democracy_index, consumer_price_index, gender_ratio_males_per100_female, infant_mortality, life_expectancy, per_capita_gdp_dollars, population_density, safe_drinking_water_access, seats_held_by_women_pct, unemployment_rate) affect the happiness score (Ladder Score)?
 2) Is happiness related to increase in a nation's wealth?
@@ -17,27 +11,30 @@ The team was very interested in the World Happiness Index and wanted to see if t
 
 Twelve data sources were selected and reviewed for potential variables that may impact / predict the "Life Ladder Score".
 
-**Life Ladder Score is a "Nationally representative samples of respondents are asked to think of a ladder, with the best possible life for them being a 10, and the worst possible life being a 0. They are then asked to rate their own current lives on that 0 to 10 scale." (https://medium.com/analytics-vidhya/what-is-world-happiness-index-f5744490701f)
+**Happiness Index (Life Ladder Score) is a "Nationally representative samples of respondents are asked to think of a ladder, with the best possible life for them being a 10, and the worst possible life being a 0. They are then asked to rate their own current lives on that 0 to 10 scale." (https://medium.com/analytics-vidhya/what-is-world-happiness-index-f5744490701f)
 
-![image](https://user-images.githubusercontent.com/89953246/149640645-63e7ba70-ac98-4210-bf56-7354dd55659d.png)
+![image](https://user-images.githubusercontent.com/89953246/152899292-a33c878c-ad97-48b3-b960-08809a6bb54e.png)
 
 SQL is used to create,join tables, the draft ERD and connect to database from AWS/S3.
 
-![image](https://user-images.githubusercontent.com/89953246/149641402-8564d9af-a486-4fda-bb05-db9bef9f414e.png)
+![image](https://user-images.githubusercontent.com/89953246/152899468-21f57fc1-757f-40ba-8908-f0c4634f56c1.png)
 
-Data Descriptions:
+
+Data Dictionary:
 
 ![image](https://user-images.githubusercontent.com/89953246/151730062-d48f97f0-8414-4239-bfca-f8490e694423.png)
 
 The data was ETL - loaded, transformed (removing null values, unnecessary columns, joined with other tables and created dataframes.
 
+Initial dataset included 235 countries and 10 features
+
 ![ETL](https://user-images.githubusercontent.com/89953246/150582559-3ff9a15a-2f0f-47fa-8502-4f360310cb9d.png)
 
-### Tool Box
+### Technology
 
-![image](https://user-images.githubusercontent.com/89953246/150589223-dd3436f9-1f6a-4249-aa58-b1d8d348e7f1.png)
+Technology, languages and algorithms utilized:
 
-
+![image](https://user-images.githubusercontent.com/89953246/152896282-0895da4d-ade2-4ae6-97c2-4f23c53a1030.png)
 
 ## Exploring Models -- Machine Learning
 ---
@@ -146,17 +143,8 @@ The following picture shows the Line equation of the project.
 </figure>
 
 
-><p>Happiness = 3.39 (intercept)
-  
-      + 0.0077(Democracy_Index) 
-      + 0.0098(Gender_Ratio_Male_per100_Females) 
-      - 0.0084(Infant_Mortality_per1000_births) 
-      + 0.00001(Per_Capita_GDP_$) 
-      - 0.00009(Population_Density_%) 
-      + 0.01033(Drinking_Water_%) 
-      + 0.01322(Women_Seats_%) 
-      - 0.03634(Unemployment_Rate_%)
-</p> 
+![image](https://user-images.githubusercontent.com/89953246/152898239-cf8b15d3-3396-4cfb-82cf-b4e5521fa304.png)
+
 
 Reference:
 1. Keboola . (n.d.). The Ultimate Guide to Random Forest regression. The Ultimate Guide to Random Forest Regression. Retrieved February 7, 2022, from https://www.keboola.com/blog/random-forest-regression 
