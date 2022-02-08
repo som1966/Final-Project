@@ -148,17 +148,8 @@ The following picture shows the Line equation of the project.
 </figure>
 
 
-><p>Happiness = 3.39 (intercept)
-  
-      + 0.0077(Democracy_Index) 
-      + 0.0098(Gender_Ratio_Male_per100_Females) 
-      - 0.0084(Infant_Mortality_per1000_births) 
-      + 0.00001(Per_Capita_GDP_$) 
-      - 0.00009(Population_Density_%) 
-      + 0.01033(Drinking_Water_%) 
-      + 0.01322(Women_Seats_%) 
-      - 0.03634(Unemployment_Rate_%)
-</p> 
+</p> ![image](https://user-images.githubusercontent.com/89953246/152898239-cf8b15d3-3396-4cfb-82cf-b4e5521fa304.png)
+
 
 Reference:
 1. Keboola . (n.d.). The Ultimate Guide to Random Forest regression. The Ultimate Guide to Random Forest Regression. Retrieved February 7, 2022, from https://www.keboola.com/blog/random-forest-regression 
